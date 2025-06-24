@@ -31,7 +31,10 @@ export default function Home() {
       <div>
         <Container my="md">
           <Grid>
-            <ImageWithComments onAddComment={handleAddComment} />
+            <ImageWithComments
+              onAddComment={handleAddComment}
+              comments={comments}
+            />
             <CommentList comments={comments} onAddReply={handleAddReply} />
           </Grid>
         </Container>
